@@ -5,6 +5,7 @@
 body {
     background-color: white;
     font-family: "Geometria";
+    transition: 0.2s;
 }
 
 #contentwrapper {
@@ -18,11 +19,12 @@ body {
 .logo {
     height:100%;
     padding-left: 20px;
+    transition: 0.2s;
 }
 
 .logo:hover {
     transform: translate(-2px,-2px);
-    filter: drop-shadow( 4px 4px 0px orange);
+    filter: drop-shadow( 4px 4px 0px goldenrod);
 }
 
 nav ul li {
