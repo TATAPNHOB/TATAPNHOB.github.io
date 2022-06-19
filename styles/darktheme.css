@@ -1,0 +1,12 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+#contentwrapper {
+    background-color: black;
+}
+
+nav ul li a {
+    color: white;
+}

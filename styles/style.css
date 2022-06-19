@@ -21,6 +21,7 @@ body {
 
 nav ul li {
     display: inline;
+    transition: 0.1s;
 }
 
 nav ul li a {
@@ -28,11 +29,11 @@ nav ul li a {
     color: black;
     font-weight: bold;
     font-size: 20px;
-    transition: 0.5s;
 }
 
-nav ul li a:hover {
+nav ul li:hover {
     text-decoration: underline;
+    transform: translateY(-2px);
 }
 
 header {
@@ -66,4 +67,12 @@ nav ul {
 #content h1 {
     text-align: center;
     padding-top: 20px;
+}
+
+#modewidget {
+    position: fixed;
+    height: 50px;
+    right:20px;
+    top:20px;
+    cursor:pointer;
 }

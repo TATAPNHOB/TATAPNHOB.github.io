@@ -3,9 +3,11 @@
     <head>
         <title>TATAPNHOB</title>
         <link href="styles/style.css" rel="stylesheet"/>
+        <link href="styles/darktheme.css" rel="stylesheet" disabled/>
         <link rel="shortcut icon" href="./img/sign.ico" type="image/x-icon"/>
     </head>
     <body>
+        <img src="img/moon.svg" id="modewidget" onclick="togglemodes();"/>
         <div id="contentwrapper">
             <header>
                 <img class="logo" src="img/logo.svg"/>
@@ -22,5 +24,21 @@
                 <img src="img/wip-lines.svg" class="wiplines"/>
             </div> 
         </div>
+        <script>
+            function togglemodes() {
+                if (document.getElementById('modewidget').getAttribute('src') == "img/moon.svg") {
+                document.getElementsByTagName('link')[1].removeAttribute('disabled');
+                
+                document.getElementsByClassName('logo')[0].setAttribute('src','img/logo-white.svg');
+                document.getElementById('modewidget').setAttribute('src','img/sun.svg');
+                }
+                else {
+                document.getElementsByTagName('link')[1].setAttribute('disabled','true');
+                
+                document.getElementsByClassName('logo')[0].setAttribute('src','img/logo.svg');
+                document.getElementById('modewidget').setAttribute('src','img/moon.svg');
+                }
+            }
+        </script>
     </body>
 </html>

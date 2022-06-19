@@ -1,0 +1,22 @@
+{
+    "locales": [
+        {
+            "LOCALE_NAME":"en",
+            "LOCALE_FULL_NAME":"English",
+            "ABOUT_ME":"about me",
+            "BLOG":"blog",
+            "MY_STUFF":"my stuff",
+            "WELCOME_MESSAGE":"This is Daniel Tatarinov's page.",
+            "WIP":"work in progress..."
+        },
+        {
+            "LOCALE_NAME":"ru",
+            "LOCALE_FULL_NAME":"Русский",
+            "ABOUT_ME":"обо мне",
+            "BLOG":"блог",
+            "MY_STUFF":"моя галерея",
+            "WELCOME_MESSAGE":"Это страница Даниила Татаринова.",
+            "WIP":"работа в процессе..."
+        }
+    ]
+}
