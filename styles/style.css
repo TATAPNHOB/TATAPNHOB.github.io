@@ -16,7 +16,6 @@ body {
 .logo {
     height:100%;
     padding-left: 20px;
-    transition: 0.1s;
 }
 
 nav ul li {
