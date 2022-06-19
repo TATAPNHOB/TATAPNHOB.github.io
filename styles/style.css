@@ -47,10 +47,14 @@ nav ul {
 
 #content {
     height:calc(100vh - 50px);
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .wiplines {
-    width: 100%;
+    width: calc(100% + 20px);
+    margin-left: -10px;
+    margin-right: -10px;
 }
 #content h1 {
     text-align: center;
