@@ -52,7 +52,7 @@ nav ul {
 .wiplines {
     width: 100%;
 }
-h1 {
+#content h1 {
     text-align: center;
     padding-top: 20px;
 }
