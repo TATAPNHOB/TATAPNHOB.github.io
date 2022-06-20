@@ -84,3 +84,15 @@ nav ul {
     top:20px;
     cursor:pointer;
 }
+
+/*
+#bg-logo {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+    margin-top: auto;
+    margin-bottom: auto;
+    transform: scale(1.2);
+    filter: blur(1vh) opacity(0.5);
+} */
