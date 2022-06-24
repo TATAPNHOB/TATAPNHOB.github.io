@@ -5,6 +5,14 @@
         <link href="styles/style.css" rel="stylesheet"/>
         <link href="styles/darktheme.css" rel="stylesheet" disabled/>
         <link rel="shortcut icon" href="./img/sign.ico" type="image/x-icon"/>
+        <script>
+            if (localStorage.getItem('mode') == null)
+                localStorage.setItem('mode','light');
+                else {
+                    if (localStorage.getItem('mode') == 'dark')
+                    turnondark();
+                }
+        </script>
     </head>
     <body onload="localstoragesetup();">
         <!-- <img id="bg-logo" src="img/logo.svg"/> -->
@@ -28,33 +36,6 @@
             </div> 
             <footer></footer>
         </div>
-        <script>
-            function togglemodes() {
-                if (localStorage.mode == 'light') {
-                turnondark();
-                localStorage.mode = 'dark';
-                }
-                else {
-                    turnonlight();
-                localStorage.mode = 'light';
-                }
-            }
-            function localstoragesetup() {
-                localStorage.setItem('mode','light');
-            }
-            function turnondark() {
-                document.getElementsByTagName('link')[1].removeAttribute('disabled');
-                
-                document.getElementsByClassName('logo')[0].setAttribute('src','img/logo-white.svg');
-                document.getElementById('modewidget').setAttribute('src','img/sun.svg');
-            }
-            function turnonlight() {
-                
-                document.getElementsByTagName('link')[1].setAttribute('disabled','true');
-                
-                document.getElementsByClassName('logo')[0].setAttribute('src','img/logo.svg');
-                document.getElementById('modewidget').setAttribute('src','img/moon.svg');
-            }
-        </script>
+        <script src="./js/theme_change.js"></script>
     </body>
 </html>
