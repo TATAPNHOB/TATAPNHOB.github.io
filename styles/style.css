@@ -1,12 +1,12 @@
 @font-face {
     font-family: Geometria;
-    src: url(fonts/Geometria-Bold.woff2);
+    src: url(../fonts/Geometria-Bold.woff2);
     font-weight: bold;
 }
 
 @font-face {
     font-family: Geometria;
-    src: url(fonts/Geometria.woff2);
+    src: url(../fonts/Geometria.woff2);
 }
 
 
@@ -40,17 +40,18 @@ body {
 }
 
 nav ul li {
-    display: inline;
-    transition: 0.1s;
+    display: block;
 }
 
 nav ul li a {
+    display: block;
     text-decoration: none;
     color: black;
     font-size: 16px;
+    transition: 0.1s;
 }
 
-nav ul li:hover {
+nav ul li:hover a {
     transform: translateY(-2px);
     text-shadow: 0 2px 3px rgba(0,0,0,0.2);
 }
