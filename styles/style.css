@@ -1,3 +1,15 @@
+@font-face {
+    font-family: Geometria;
+    src: url(fonts/Geometria-Bold.woff2);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Geometria;
+    src: url(fonts/Geometria.woff2);
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -70,6 +82,7 @@ nav ul {
     width: calc(100% + 20px);
     margin-left: -10px;
     margin-right: -10px;
+    pointer-events: none;
 }
 #content h1 {
     text-align: center;
