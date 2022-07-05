@@ -1,0 +1,32 @@
+#content {
+    height:100%;
+}
+.post-container {
+    height: 200px;
+}
+.postmortem {
+    background-image: url(../img/pm-fold.svg);
+    height:100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: all 0.2s ease;
+}
+
+.postmortem:hover {
+    animation: postmort 0.1s;
+}
+
+@keyframes postmort {
+    0% {
+        background-image: url(../img/pm-fold.svg);
+    }
+    50% {
+        background-image: url(../img/pm-kf1.svg);
+    }
+    75% {
+        background-image: url(../img/pm-kf2.svg);
+    }
+    100% {
+        background-image: url(../img/pm-kf1.svg);
+    }
+}
