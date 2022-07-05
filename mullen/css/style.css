@@ -83,3 +83,11 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.logo {
+    position: absolute;
+    top:30px;
+    left:20px;
+    width:150px;
+    pointer-events: none;
+}
