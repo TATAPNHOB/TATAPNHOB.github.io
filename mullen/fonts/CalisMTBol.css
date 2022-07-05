@@ -1,0 +1,9 @@
+/* Webfont: CalisMTBol */@font-face {
+    font-family: 'CalistoMT';
+    src: url('CalisMTBol.woff2') format('woff2'), /* Modern Browsers */
+         url('CalisMTBol.otf') format('opentype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+
