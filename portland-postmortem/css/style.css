@@ -64,7 +64,8 @@ body {
 } */
 
 .red-bg {
-    background-color: darkred;
+    background-image: url(../img/folders.svg);
+    background-size: contain;
     height: 60px;
     width: 100%;
     position: absolute;
