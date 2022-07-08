@@ -87,23 +87,37 @@ body {
     z-index: -1;
 }
 
-.logo {
+.logo-card {
     display:block;
     width:400px;
     height:300px;
-    background-image: url(../img/mullen-logo.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 100px;
+    margin-left:5px;
+    margin-right:5px;
+    transition: 0.2s;
+}
+
+.logo-card-mullen:hover {
+    transform: scale(1.04);
+}
+
+.logo-card-mullen {
+    background-image: url(../img/mullen-card.svg);
+}
+
+.logo-card-unknown {
+    background-image: url(../img/unknown-card.svg);
 }
 
 #content {
-    width:800px;
+    width:100%;
     margin-left: auto;
     margin-right: auto;
     height: calc(100vh - 150px);
     padding-top: 50px;
+    display: flex;
+    justify-content: center;
 }
