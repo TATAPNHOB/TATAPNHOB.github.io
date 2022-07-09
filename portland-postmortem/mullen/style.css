@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: Caveat;
+    src: url(../fonts/Caveat-Regular.woff2);
+}
+
 body {
     background-color: black;
     width: 100%;
@@ -73,6 +78,7 @@ body {
     background-color: rgb(30,30,30);
     height: 2000px;
     padding: 10px;
+    position: relative;
 }
 
 #content {
@@ -117,6 +123,7 @@ footer {
     width: 100%;
     height: 100px;
     padding: 5px;
+    position: relative;
 }
 
 h1 {
@@ -138,4 +145,24 @@ h1 {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+    position: relative;
+    z-index: 2;
+}
+
+.uncertain {
+    color: red;
+    font-family: Caveat;
+    font-size: 15px;
+}
+
+
+.red-bg {
+    background-image: url(../img/folders.svg);
+    background-size: contain;
+    height: 58px;
+    width: calc(100% + 10px);
+    position: absolute;
+    left:-10px;
+    top:32px;
+    z-index: 0;
 }
