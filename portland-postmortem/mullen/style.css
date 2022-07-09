@@ -19,9 +19,9 @@ body {
 
 
 .impulse {
-    width:500px;
+    width:600px;
     pointer-events: none;
-    background-image: url(../img/signage.svg);
+    background-image: url(../img/signage-changed.svg);
     height:500px;
     background-repeat: no-repeat;
     background-position: center;
@@ -62,8 +62,4 @@ body {
     background-image: url(../img/vignette.png);
     background-size: cover;
     background-position: center;
-}
-
-#noise::after {
-    background: radial-gradient(ellipse at center, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 70%,rgba(255,255,255,1) 100%);
 }
