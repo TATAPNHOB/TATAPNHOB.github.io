@@ -1,6 +1,6 @@
 var canvas = document.getElementById('noise');
-var width = 960;
-var height = 540;
+var width = canvas.getAttribute('width');
+var height = canvas.getAttribute('height');
 
 var ctx = canvas.getContext('2d');
 
