@@ -3,17 +3,19 @@
     <head>
         <title>Скотт Мюллен, ЧД</title>
         <link rel="stylesheet" href="./style.css"/>
+        <link rel="stylesheet" href="./darkmode.css" disabled/>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif">
     </head>
-    <body>
+    <body onload="setup();">
         <canvas id="noise" width="640" height="360"></canvas>
         <div id="vignette"></div>
+        <div id="modewidget" class="widget" onclick="togglemodes();"></div>
         <div class="precontent-container">
             <!-- <div class="wip"></div> -->
             <div class="impulse"></div>
         </div>
         <div id="content-container">
-            <header>
+            <!-- <header>
                 <nav>
                     <ul>
                         <li><a href="#about">Обо мне</a></li>
@@ -22,7 +24,7 @@
                         <li><a href="#">Предыстория</a></li>
                     </ul>
                 </nav>
-            </header>
+            </header> -->
             <div id="content">
                 <div id="about">
                     
@@ -34,5 +36,32 @@
             </footer> -->
         </div>
         <script src="./js/noise.js"></script>
+        <script>
+            function setup() {
+                localStorage.mode = 'light';
+            }
+            function togglemodes() {
+                switch (localStorage.mode) {
+                    case 'light':
+                    default:
+                        localStorage.mode = 'dark';
+                        document.getElementsByClassName('impulse')[0].classList.remove('flipped-2');
+                        document.getElementsByClassName('impulse')[0].classList.add('flipped');
+                        setTimeout(() => {
+                            document.getElementsByClassName('impulse')[0].classList.add('white-logo');
+                        }, 150);
+                    break;
+                    case 'dark':
+                        localStorage.mode = 'light';
+                        document.getElementsByClassName('impulse')[0].classList.remove('flipped');
+                        document.getElementsByClassName('impulse')[0].classList.add('flipped-2');
+                        setTimeout(() => {
+                            document.getElementsByClassName('impulse')[0].classList.remove('white-logo');
+                        }, 150);
+                    break;
+                }
+                document.getElementsByTagName('link')[1].toggleAttribute('disabled');
+            }
+        </script>
     </body>
 </html>

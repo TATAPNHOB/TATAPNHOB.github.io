@@ -4,10 +4,10 @@
 }
 
 body {
-    background-color: black;
+    background-color: rgb(225,225,225);
     width: 100%;
     height:100vh;
-    color: white;
+    color: black;
     font-family: 'PT Serif';
 }
 .precontent-container {
@@ -23,7 +23,7 @@ body {
 .impulse {
     width:600px;
     pointer-events: none;
-    background-image: url(./img/mullen-logo-white.svg);
+    background-image: url(../portland-postmortem/img/mullen-logo.svg);
     height:300px;
     background-repeat: no-repeat;
     background-position: center;
@@ -48,30 +48,20 @@ body {
     }
 }
 
+
 #noise {
-    position: fixed;
-    width: 100%;
-    height: calc(100% + 5px);
-    z-index: -2;
-    filter: blur(0.1vh);
-    top:-5px;
+    display: none;
 }
 
 #vignette {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background-image: url(./img/vignette.png);
-    background-size: cover;
-    background-position: center;
+    display: none;
 }
 
 #content-container {
     width:1000px;
     margin-left: auto;
     margin-right: auto;
-    background-color: rgb(30,30,30);
+    background-color: white;
     height: 2000px;
     padding: 10px;
     position: relative;
@@ -89,7 +79,7 @@ nav ul li {
 nav ul li a {
     display: block;
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: 16px;
     transition: 0.1s;
 }
@@ -161,4 +151,59 @@ h1 {
     left:-10px;
     top:32px;
     z-index: 0;
+}
+
+#modewidget {
+    position: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 30px;
+    width: 30px;
+    right:20px;
+    top:20px;
+    cursor:pointer;
+}
+
+.flipped {
+    animation: flip-flop 0.3s ease;
+}
+
+.flipped-2 {
+    animation: flip-flop-2 0.3s ease;
+}
+@keyframes flip-flop {
+    0% {
+        transform: scaleY(1);
+    }
+    50% {
+        transform: scaleY(0);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+@keyframes flip-flop-2 {
+    0% {
+        transform: scaleY(1);
+    }
+    50% {
+        transform: scaleY(0);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+.widget {
+    background-image: url(../img/moon.svg);
+}
+
+.sun {
+    background-image: url(../img/sun.svg);
+}
+
+.white-logo {
+    background-image: url(./img/mullen-logo-white.svg);
 }
