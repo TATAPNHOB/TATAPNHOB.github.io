@@ -47,17 +47,13 @@
                         localStorage.mode = 'dark';
                         document.getElementsByClassName('impulse')[0].classList.remove('flipped-2');
                         document.getElementsByClassName('impulse')[0].classList.add('flipped');
-                        setTimeout(() => {
-                            document.getElementsByClassName('impulse')[0].classList.add('white-logo');
-                        }, 150);
+                        document.getElementsByClassName('impulse')[0].classList.add('white-logo');
                     break;
                     case 'dark':
                         localStorage.mode = 'light';
                         document.getElementsByClassName('impulse')[0].classList.remove('flipped');
                         document.getElementsByClassName('impulse')[0].classList.add('flipped-2');
-                        setTimeout(() => {
-                            document.getElementsByClassName('impulse')[0].classList.remove('white-logo');
-                        }, 150);
+                        document.getElementsByClassName('impulse')[0].classList.remove('white-logo');
                     break;
                 }
                 document.getElementsByTagName('link')[1].toggleAttribute('disabled');

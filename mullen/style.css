@@ -29,6 +29,7 @@ body {
     background-position: center;
     background-size: contain;
     animation: impulse-fadein-up 0.5s ease;
+    transition: 0.2s;
 }
 
 .wip {
@@ -182,7 +183,7 @@ h1 {
         transform: scaleY(1);
     }
     50% {
-        transform: scaleY(0);
+        transform: rotate3d(1, 2.0, 3.0, 10deg);
     }
     100% {
         transform: scaleY(1);
@@ -194,7 +195,7 @@ h1 {
         transform: scaleY(1);
     }
     50% {
-        transform: scaleY(0);
+        transform: rotate3d(1, 2.0, 3.0, 10deg);
     }
     100% {
         transform: scaleY(1);
