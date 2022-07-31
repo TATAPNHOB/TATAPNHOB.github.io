@@ -134,3 +134,8 @@ footer {
     background-size: contain;
 
 }
+
+.highlighted {
+    background-color: black;
+    color: white;
+}

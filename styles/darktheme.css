@@ -10,3 +10,8 @@ body {
 nav ul li a {
     color: white;
 }
+
+.highlighted {
+    color: black;
+    background-color: white;
+}

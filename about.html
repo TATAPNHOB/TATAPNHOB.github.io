@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zxx">
+    <head>
+        <title>TATAPNHOB - About</title>
+        <link href="styles/style.css" rel="stylesheet"/>
+        <link href="styles/darktheme.css" rel="stylesheet" disabled/>
+        <link rel="shortcut icon" href="./img/sign.ico" type="image/x-icon"/>
+        <link rel="preload" href="fonts/Geometria-Bold.woff2" as="font"/>
+        <link rel="preload" href="fonts/Geometria.woff2" as="font"/>
+        <script>
+            if (localStorage.getItem('mode') == null)
+                localStorage.setItem('mode','light');
+                else {
+                    if (localStorage.getItem('mode') == 'dark')
+                    turnondark();
+                }
+        </script>
+    </head>
+    <body onload="localstoragesetup();">
+        <!-- <img id="bg-logo" src="img/logo.svg"/> -->
+        <img src="img/moon.svg" id="modewidget" onclick="togglemodes();"/>
+        <div id="contentwrapper">
+            <header>
+                <img class="logo" src="img/logo.svg"/>
+                <nav>
+                    <ul>
+                        <li><a href="#" class="highlighted">about me</a></li>
+                        <li><a href="#">my stuff</a></li>
+                        <li><a href="#">contacts</a></li>
+                        <li><a href="#">my respects</a></li>
+                        <li><a href="#"><b>resume</b></a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div id="content">
+                <h1>Я – Даниил Татаринов.</h1>
+            </div> 
+            <footer></footer>
+        </div>
+        <script src="./js/theme_change.js"></script>
+    </body>
+</html>
