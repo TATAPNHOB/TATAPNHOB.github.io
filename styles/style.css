@@ -17,20 +17,20 @@
 body {
     background-color: white;
     width:100%;
-    /* background-image: url(../img/bit-o-bg.svg);
+    background-image: url(../img/bit-o-bg.svg);
     background-repeat: repeat-y;
     background-position: center;
-    background-size: cover; */
+    background-size: cover;
     font-family: "Geometria";
     transition: 0.2s;
 }
 
 #contentwrapper {
     background-color: white;
-    width: 1000px;
+    width: 800px;
     margin: auto;
     height: 100%;
-    /* box-shadow: 0 0 50px gray; */
+    box-shadow: 0 0 50px gray;
     transition: 0.2s;
 }
 .logo {
@@ -62,21 +62,15 @@ nav ul li:hover a {
 }
 
 header {
-    background-color: white;
     height:30px;
     padding: 10px;
-    position: fixed;
-    width: 100%;
-    z-index:1;
-    transition: 0.2s;
 }
 nav {
     float: right;
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 500px;
     height: 100%;
-    transition: 0.1s;
 }
 nav ul {
     display: flex;
@@ -96,8 +90,9 @@ nav ul {
     margin-right: -10px;
     pointer-events: none;
 }
-h1 {
+#content h1 {
     text-align: center;
+    padding-top: 20px;
 }
 
 #modewidget {
@@ -106,7 +101,6 @@ h1 {
     right:20px;
     top:20px;
     cursor:pointer;
-    z-index:5;
 }
 
 /*
@@ -139,16 +133,4 @@ footer {
     height: 200px;
     background-size: contain;
 
-}
-
-#nav-container {
-    width:500px;
-    height: 30px;
-    /* transform: translateY(-9px); */
-    display: inline-block;
-}
-
-#header-filler {
-    height:50px;
-    width:100%;
 }
