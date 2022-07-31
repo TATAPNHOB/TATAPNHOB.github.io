@@ -35,8 +35,11 @@ body {
 }
 .logo {
     height:100%;
-    padding-left: 20px;
     transition: 0.2s;
+    background-image: url(../img/logo.svg);
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: cover;
 }
 
 .logo:hover {
@@ -138,4 +141,11 @@ footer {
 .highlighted {
     background-color: black;
     color: white;
+}
+#logo-container {
+    padding-left: 20px;
+    width: 189px;
+    height: 100%;
+    display: block;
+    float: left;
 }

@@ -19,13 +19,11 @@ function localstoragesetup() {
 function turnondark() {
     document.getElementsByTagName('link')[1].toggleAttribute('disabled');
     
-    document.getElementsByClassName('logo')[0].setAttribute('src','img/logo-white.svg');
     document.getElementById('modewidget').setAttribute('src','img/sun.svg');
 }
 function turnonlight() {
     
     document.getElementsByTagName('link')[1].toggleAttribute('disabled');
     
-    document.getElementsByClassName('logo')[0].setAttribute('src','img/logo.svg');
     document.getElementById('modewidget').setAttribute('src','img/moon.svg');
 }

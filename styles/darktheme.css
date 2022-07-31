@@ -15,3 +15,7 @@ nav ul li a {
     color: black;
     background-color: white;
 }
+
+.logo {
+    background-image: url(../img/logo-white.svg);
+}
