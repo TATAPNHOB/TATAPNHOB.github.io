@@ -17,12 +17,15 @@
 body {
     background-color: white;
     width:100%;
+    font-family: "Geometria";
+    transition: 0.2s;
+}
+
+.body-bg {
     background-image: url(../img/bit-o-bg.svg);
     background-repeat: repeat-y;
     background-position: center;
     background-size: cover;
-    font-family: "Geometria";
-    transition: 0.2s;
 }
 
 #contentwrapper {
