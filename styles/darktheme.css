@@ -4,7 +4,7 @@ body {
 }
 
 #contentwrapper {
-    background-color: rgb(10,10,10);
+    background-color: rgb(30,30,30);
 }
 
 nav ul li a {
@@ -12,9 +12,13 @@ nav ul li a {
 }
 
 .highlighted {
-    color: black;
     background-color: white;
 }
+
+.highlighted a {
+    color: black;
+}
+
 
 .logo {
     background-image: url(../img/logo-white.svg);

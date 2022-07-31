@@ -30,10 +30,10 @@ body {
 
 #contentwrapper {
     background-color: white;
-    width: 800px;
+    width: 950px;
     margin: auto;
     height: 100%;
-    box-shadow: 0 0 50px gray;
+    /* box-shadow: 0 0 50px gray; */
     transition: 0.2s;
 }
 .logo {
@@ -86,8 +86,8 @@ nav ul {
 
 #content {
     height:calc(100vh - 90px);
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .wiplines {
@@ -96,9 +96,9 @@ nav ul {
     margin-right: -10px;
     pointer-events: none;
 }
-#content h1 {
+h1 {
     text-align: center;
-    padding-top: 20px;
+    padding-bottom: 10px;
 }
 
 #modewidget {
@@ -144,9 +144,15 @@ footer {
 .highlighted {
     background-color: black;
     color: white;
+    pointer-events: none;
 }
+
+.highlighted a {
+    color: white;
+}
+
 #logo-container {
-    padding-left: 20px;
+    margin-left: 20px;
     width: 189px;
     height: 100%;
     display: block;
