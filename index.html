@@ -2,8 +2,9 @@
 <html lang="zxx">
     <head>
         <title>TATAPNHOB</title>
-        <link href="styles/style.css" rel="stylesheet"/>
+        <link href="styles/general.css" rel="stylesheet"/>
         <link href="styles/darktheme.css" rel="stylesheet" disabled/>
+        <link href="styles/index.css" rel="stylesheet"/>
         <link rel="shortcut icon" href="./img/sign.ico" type="image/x-icon"/>
         <link rel="preload" href="fonts/Geometria-Bold.woff2" as="font"/>
         <link rel="preload" href="fonts/Geometria.woff2" as="font"/>
@@ -17,26 +18,19 @@
         </script>
     </head>
     <body onload="localstoragesetup();">
-        <!-- <img id="bg-logo" src="img/logo.svg"/> -->
         <img src="img/moon.svg" id="modewidget" onclick="togglemodes();"/>
-        <div id="contentwrapper">
-            <header>
+        <header>
                 <div id="logo-container"><div class="logo"></div></div>
                 <nav>
                     <ul>
                         <li><a href="about.html">about me</a></li>
-                        <li><a href="#">my stuff</a></li>
-                        <li><a href="#">contacts</a></li>
-                        <li><a href="#">recommendations</a></li>
-                        <li><a href="#"><b>resume</b></a></li>
+                        <li><a href="stuff.html">my stuff</a></li>
+                        <li><a href="contacts.html">contacts</a></li>
+                        <li><a href="rec.html">recommendations</a></li>
+                        <li><a href="resume.html"><b>resume</b></a></li>
                     </ul>
                 </nav>
-            </header>
-            <div id="content">
-                <h1>пока мы здесь...</h1>
-            </div> 
-            <footer></footer>
-        </div>
+        </header>
         <script src="./js/theme_change.js"></script>
     </body>
 </html>
