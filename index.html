@@ -19,32 +19,7 @@
         <script src="./js/two.js"></script>
     </head>
     <body onload="localstoragesetup();">
-        <img src="img/moon.svg" id="modewidget" onclick="togglemodes();"/>
-        <header id="hed">
-                <div id="logo-container">
-                    <div class="logo"></div>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="about.html">about me</a></li>
-                        <li><a href="stuff.html">my stuff</a></li>
-                        <li><a href="contacts.html">contacts</a></li>
-                        <li><a href="rec.html">recommendations</a></li>
-                        <li><a href="resume.html"><b>resume</b></a></li>
-                    </ul>
-                </nav>
-        </header>
-        <script src="./js/theme_change.js"></script>
-        <!-- <script>
-
-            var element = document.getElementById('logo-container');
-            var two = new Two({fitted: true, type: Two.types.svg}).appendTo(element);
-            
-            var svg = two.interpret(document.getElementById('assets')[0]);
-
-            svg.center();
-            two.update();
-        </script> -->
+        <script src="./js/three.min.js"></script>
         <script>
             var height = window.innerHeight;
             var width = window.innerWidth;
@@ -64,5 +39,34 @@
                 header.setAttribute('style','transform: translate(' + (30 * parallax_intensity * x) + 'px, ' + (30 * parallax_intensity * y) + 'px);');
             }
         </script>
+        <div id="background"></div>
+        <script src="./js/client.js"></script>
+        <img src="img/moon.svg" id="modewidget" onclick="togglemodes();"/>
+        <div id="top"></div>
+        <div id="hed">
+                <div id="logo-container">
+                    <div class="logo"></div>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="about.html">about me</a></li>
+                        <li><a href="stuff.html">my stuff</a></li>
+                        <li><a href="contacts.html">contacts</a></li>
+                        <li><a href="rec.html">recommendations</a></li>
+                        <li><a href="resume.html"><b>resume</b></a></li>
+                    </ul>
+                </nav>
+            </div>
+        <script src="./js/theme_change.js"></script>
+        <!-- <script>
+
+            var element = document.getElementById('logo-container');
+            var two = new Two({fitted: true, type: Two.types.svg}).appendTo(element);
+            
+            var svg = two.interpret(document.getElementById('assets')[0]);
+
+            svg.center();
+            two.update();
+        </script> -->
     </body>
 </html>
