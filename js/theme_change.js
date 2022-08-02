@@ -18,12 +18,7 @@ function localstoragesetup() {
 }
 function turnondark() {
     document.getElementsByTagName('link')[1].toggleAttribute('disabled');
-    
-    document.getElementById('modewidget').setAttribute('src','img/sun.svg');
 }
 function turnonlight() {
-    
     document.getElementsByTagName('link')[1].toggleAttribute('disabled');
-    
-    document.getElementById('modewidget').setAttribute('src','img/moon.svg');
 }

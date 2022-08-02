@@ -30,7 +30,7 @@ function onWindowResize() {
 
 function onWindowScroll() {
 
-    camera.position.z = 1 + Math.min(10, window.scrollY * 1.5 / window.innerHeight);
+    camera.position.z = 1 + Math.min(10, window.scrollY * 2 / window.innerHeight);
 }
 
 // animation

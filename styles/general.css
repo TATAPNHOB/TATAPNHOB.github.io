@@ -103,6 +103,11 @@ h1 {
 #modewidget {
     position: fixed;
     height: 30px;
+    width: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/moon.svg);
     right:20px;
     top:20px;
     cursor:pointer;
