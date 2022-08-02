@@ -16,11 +16,14 @@
                     turnondark();
                 }
         </script>
+        <script src="./js/two.js"></script>
     </head>
     <body onload="localstoragesetup();">
         <img src="img/moon.svg" id="modewidget" onclick="togglemodes();"/>
-        <header>
-                <div id="logo-container"><div class="logo"></div></div>
+        <header id="hed">
+                <div id="logo-container">
+                    <div class="logo"></div>
+                </div>
                 <nav>
                     <ul>
                         <li><a href="about.html">about me</a></li>
@@ -32,5 +35,32 @@
                 </nav>
         </header>
         <script src="./js/theme_change.js"></script>
+        <!-- <script>
+
+            var element = document.getElementById('logo-container');
+            var two = new Two({fitted: true, type: Two.types.svg}).appendTo(element);
+            
+            var svg = two.interpret(document.getElementById('assets')[0]);
+
+            svg.center();
+            two.update();
+        </script> -->
+        <script>
+            var height = window.innerHeight;
+            var width = window.innerWidth;
+
+            document.onmousemove = handleMouseMove;
+
+            function handleMouseMove(e) {
+                var x = e.pageX;
+                var y = e.pageY;
+                
+                x = (x - width / 2) / width;
+                y = (y - height / 2) / height;
+                
+                var header = document.getElementById('hed');
+                header.setAttribute('style','transform: translate(' + (30 * x) + 'px, ' + (30 * y) + 'px);');
+            }
+        </script>
     </body>
 </html>
