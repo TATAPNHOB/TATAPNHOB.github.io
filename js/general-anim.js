@@ -4,7 +4,7 @@ camera.position.z = 1;
 
 const scene = new THREE.Scene();
 
-const geometry = new THREE.TorusGeometry( 1, 0.4, 8, 60, Math.PI * 2 );
+const geometry = new THREE.TorusGeometry( 1, 0.4, 16, 60, Math.PI * 2 );
 const material = new THREE.MeshNormalMaterial({ side: THREE.DoubleSide });
 
 const mesh = new THREE.Mesh( geometry, material );
@@ -17,7 +17,8 @@ renderer.setSize( window.innerWidth, window.innerHeight );
 renderer.setAnimationLoop( animation );
 document.getElementById('background').appendChild( renderer.domElement );
 
-window.onWindowResize = addEventListener('resize', onWindowResize, false);
+addEventListener('resize', onWindowResize, false);
+addEventListener('scroll', onWindowScroll, false);
 
 function onWindowResize() {
 
@@ -25,6 +26,11 @@ function onWindowResize() {
     camera.updateProjectionMatrix();
 
     renderer.setSize( window.innerWidth, window.innerHeight );
+}
+
+function onWindowScroll() {
+
+    camera.position.z = 1 + Math.min(10, window.scrollY * 1.5 / window.innerHeight);
 }
 
 // animation

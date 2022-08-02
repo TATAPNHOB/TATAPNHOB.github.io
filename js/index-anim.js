@@ -15,7 +15,7 @@ renderer.setSize( window.innerWidth, window.innerHeight );
 renderer.setAnimationLoop( animation );
 document.getElementById('background').appendChild( renderer.domElement );
 
-window.onWindowResize = addEventListener('resize', onWindowResize, false);
+addEventListener('resize', onWindowResize, false);
 
 function onWindowResize() {
 
