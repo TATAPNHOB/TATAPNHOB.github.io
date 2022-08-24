@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VTM Interactive Character Sheet</title>
+</head>
+<body>
+    <style>
+        .container {
+            width:1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .section {
+            width:100%;
+            height:fit-content;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .col {
+            width:300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .dot {
+            width: 10px;
+            height: 10px;
+            border: 2px solid black;
+            margin:2px;
+            border-radius: 10px;
+        }
+        .dot[state="1"] {
+            background-color: black;
+        }
+        .dot-row {
+            display: flex;
+        }
+        .row-label {
+            margin-right: 2px;
+        }
+        .col-label {
+            font-weight: bold;
+        }
+        .attribute {
+            display: flex;
+            width:100%;
+            justify-content: space-between;
+        }
+        h1 {
+            text-align: center;
+        }
+        .section-label {
+            text-align: center;
+        }
+    </style>
+    <div class="container">
+        <h1>Vampires beeyotch</h1>
+        <hr>
+        <h2 class="section-label">Атрибуты</h2>
+        <div class="section">
+            <div class="col">
+                <span class="col-label">Физические</span>
+                <div class="attribute">
+                    <span class="row-label">Сила</span>
+                    <div class="dot-row" max="5">
+                        <input type="hidden" value="0">
+                        <div class="dot" state="0" n="0"></div>
+                        <div class="dot" state="0" n="1"></div>
+                        <div class="dot" state="0" n="2"></div>
+                        <div class="dot" state="0" n="3"></div>
+                        <div class="dot" state="0" n="4"></div>
+                    </div>
+                </div>
+                <div class="attribute">
+                    <span class="row-label">Ловкость</span>
+                    <div class="dot-row" max="5">
+                        <input type="hidden" value="0">
+                        <div class="dot" state="0" n="0"></div>
+                        <div class="dot" state="0" n="1"></div>
+                        <div class="dot" state="0" n="2"></div>
+                        <div class="dot" state="0" n="3"></div>
+                        <div class="dot" state="0" n="4"></div>
+                    </div>
+                </div>
+                <div class="attribute">
+                    <span class="row-label">Выносливость</span>
+                    <div class="dot-row" max="5">
+                        <input type="hidden" value="0">
+                        <div class="dot" state="0" n="0"></div>
+                        <div class="dot" state="0" n="1"></div>
+                        <div class="dot" state="0" n="2"></div>
+                        <div class="dot" state="0" n="3"></div>
+                        <div class="dot" state="0" n="4"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <span class="col-label">Социальные</span>
+                <div class="attribute">
+                    <span class="row-label">Обаяние</span>
+                    <div class="dot-row" max="5">
+                        <input type="hidden" value="0">
+                        <div class="dot" state="0" n="0"></div>
+                        <div class="dot" state="0" n="1"></div>
+                        <div class="dot" state="0" n="2"></div>
+                        <div class="dot" state="0" n="3"></div>
+                        <div class="dot" state="0" n="4"></div>
+                    </div>
+                </div>
+                <div class="attribute">
+                    <span class="row-label">Манипуляция</span>
+                    <div class="dot-row" max="5">
+                        <input type="hidden" value="0">
+                        <div class="dot" state="0" n="0"></div>
+                        <div class="dot" state="0" n="1"></div>
+                        <div class="dot" state="0" n="2"></div>
+                        <div class="dot" state="0" n="3"></div>
+                        <div class="dot" state="0" n="4"></div>
+                    </div>
+                </div>
+                <div class="attribute">
+                    <span class="row-label">Привлекательность</span>
+                    <div class="dot-row" max="5">
+                        <input type="hidden" value="0">
+                        <div class="dot" state="0" n="0"></div>
+                        <div class="dot" state="0" n="1"></div>
+                        <div class="dot" state="0" n="2"></div>
+                        <div class="dot" state="0" n="3"></div>
+                        <div class="dot" state="0" n="4"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <span class="col-label">Ментальные</span>
+                <div class="attribute">
+                    <span class="row-label">Восприятие</span>
+                    <div class="dot-row" max="5">
+                        <input type="hidden" value="0">
+                        <div class="dot" state="0" n="0"></div>
+                        <div class="dot" state="0" n="1"></div>
+                        <div class="dot" state="0" n="2"></div>
+                        <div class="dot" state="0" n="3"></div>
+                        <div class="dot" state="0" n="4"></div>
+                    </div>
+                </div>
+                <div class="attribute">
+                    <span class="row-label">Интеллект</span>
+                    <div class="dot-row" max="5">
+                        <input type="hidden" value="0">
+                        <div class="dot" state="0" n="0"></div>
+                        <div class="dot" state="0" n="1"></div>
+                        <div class="dot" state="0" n="2"></div>
+                        <div class="dot" state="0" n="3"></div>
+                        <div class="dot" state="0" n="4"></div>
+                    </div>
+                </div>
+                <div class="attribute">
+                    <span class="row-label">Смекалка</span>
+                    <div class="dot-row" max="5">
+                        <input type="hidden" value="0">
+                        <div class="dot" state="0" n="0"></div>
+                        <div class="dot" state="0" n="1"></div>
+                        <div class="dot" state="0" n="2"></div>
+                        <div class="dot" state="0" n="3"></div>
+                        <div class="dot" state="0" n="4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./vtm.js"></script>
+</body>
+</html>

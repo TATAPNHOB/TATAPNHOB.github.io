@@ -21,7 +21,6 @@ addEventListener('resize', onWindowResize, false);
 addEventListener('scroll', onWindowScroll, false);
 
 function onWindowResize() {
-
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
 
@@ -29,16 +28,12 @@ function onWindowResize() {
 }
 
 function onWindowScroll() {
-
-    camera.position.z = 1 + Math.min(10, window.scrollY * 2 / window.innerHeight);
+    camera.position.z = 1 + Math.min(10, window.scrollY * 10 / window.innerHeight);
+	mesh.rotation.y = window.scrollY / 300;
 }
 
 // animation
 
 function animation( time ) {
-
-	mesh.rotation.y = time / 1000;
-
 	renderer.render( scene, camera );
-
 }

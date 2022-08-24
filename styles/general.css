@@ -30,9 +30,12 @@ body {
 
 #contentwrapper {
     background-color: white;
-    width: 950px;
+    width: 745px;
     margin: auto;
     height: 100%;
+    right: 60px;
+    position: absolute;
+    height:fit-content;
     /* box-shadow: 0 0 50px gray; */
 }
 .logo {
