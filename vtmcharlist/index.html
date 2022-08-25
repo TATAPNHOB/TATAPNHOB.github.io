@@ -56,10 +56,26 @@
         .section-label {
             text-align: center;
         }
+        .logo {
+            height:120px;
+            pointer-events: none;
+        }
+        .logo-container {
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+        .logo-container>hr {
+            flex:100;
+        }
     </style>
     <div class="container">
-        <h1>Vampires beeyotch</h1>
-        <hr>
+        <div class="logo-container">
+            <hr>
+            <img class="logo" src="./tvm-csh.svg">
+            <hr>
+        </div>
+            <hr>
         <h2 class="section-label">Атрибуты</h2>
         <div class="section">
             <div class="col">
