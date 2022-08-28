@@ -3,18 +3,35 @@ $("body").on("click", ".dot", function() {
 })
 
 function toggleDot(dot) {
-    if (dot.attr("state") === "1") {
-        dot.attr("state", "0");
-        dot.parent().children("input").attr("value", (parseInt(dot.attr("n")) - 1).toString());
-        for (i = dot.parent().attr("max") - 1; i > dot.attr("n"); i--) {
-            dot.parent().children(".dot[n=" + i.toString() + "]").attr("state", "0");
-        }
+    if (dot.attr("state") === "0") {
+        updateSet(dot.parent(), parseInt(dot.attr('n')));
     }
     else {
-        dot.attr("state", "1");
-        dot.parent().children("input").attr("value", (parseInt(dot.attr("n"))).toString());
-        for (i = 0; i < dot.attr("n"); i++) {
-            dot.parent().children(".dot[n=" + i.toString() + "]").attr("state", "1");
+        if (Math.abs((parseInt(dot.parent().children('input').attr('value')) - parseInt(dot.attr('n')))) > 0) {
+            updateSet(dot.parent(), parseInt(dot.attr('n')));
+        }
+        else {
+            updateSet(dot.parent(), parseInt(dot.attr('n')) - 1);
         }
     }
+}
+
+function updateSet(dot_set, value) {
+    updateInput(dot_set, value);
+    updateDots(dot_set, value);
+}
+
+function updateInput(dot_row, value) {
+    dot_row.children('input').attr('value', value.toString());
+}
+
+function updateDots(dot_set, value) {
+    dot_set.children('.dot').each(function () {
+        if (value >= parseInt($(this).attr('n'))) {
+            $(this).attr('state', '1');
+        }
+        else {
+            $(this).attr('state', '0');
+        }
+    })
 }
