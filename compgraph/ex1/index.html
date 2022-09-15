@@ -27,7 +27,7 @@
 			import * as THREE from 'three';
 
 			import { TrackballControls } from './addons/TrackballControls.js';
-			import { TDSLoader } from './addons/TDSLoader.js';
+			import { GLTFLoader } from './addons/GLTFLoader.js';
 
 			let container, controls;
 			let camera, scene, renderer;
@@ -49,28 +49,14 @@
 				const directionalLight = new THREE.DirectionalLight( 0xffeedd );
 				directionalLight.position.set( 0, 0, 2 );
 				scene.add( directionalLight );
-
-				//3ds files dont store normal maps
-				const normal = new THREE.TextureLoader().load( 'model/normal.jpg' );
-
+				
 				const loader = new TDSLoader( );
 				loader.setResourcePath( 'model/' );
-				loader.load( 'model/portalgun.3ds', function ( object ) {
+				loader.load( 'model/untitled.glb', function ( gltf ) {
 
-					object.traverse( function ( child ) {
+				scene.add( gltf.scene );
 
-						if ( child.isMesh ) {
-
-							child.material.specular.setScalar( 0.1 );
-							child.material.normalMap = normal;
-
-						}
-
-					} );
-
-					scene.add( object );
-
-				} );
+				});
 
 				renderer = new THREE.WebGLRenderer();
 				renderer.setPixelRatio( window.devicePixelRatio );
