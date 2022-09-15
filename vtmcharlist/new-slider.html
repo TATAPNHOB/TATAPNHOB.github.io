@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slider</title>
+</head>
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        input[type=range]::-webkit-slider-thumb {
+            --slider-height: 25px;
+            appearance: none;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+        }
+
+        .slider {
+            position: absolute;
+            -webkit-appearance: none;
+            height: 25px;
+            width: 143px;
+            background-image: url(./circle.svg);
+            background-size: 29px 25px;
+            border-radius: 25px;
+            z-index: 1;
+        }
+
+        .slider::-webkit-slider-thumb {
+            width: 10px;
+            height: 10px;
+            border-radius: 20px;
+            background-color: black;
+        }
+        .slider-bg {
+            position: absolute;
+            height: 25px;
+            width: 143px;
+            background-image: url(./circle-filled.svg);
+            background-size: 29px 25px;
+            opacity: 0.7;
+            z-index: 2;
+            pointer-events: none;
+        }
+    </style>
+    <div class="slider-bg"></div>
+    <input class="slider" id="dots" type="range" min="1" max="5" oninput="updatebg();" value="1">
+    <script>
+        function updatebg() {
+            let val = document.getElementById('dots').value;
+            document.getElementsByClassName('slider-bg').style.width = (val * 29).toString() + "px";
+        }
+    </script>
+</body>
+</html>

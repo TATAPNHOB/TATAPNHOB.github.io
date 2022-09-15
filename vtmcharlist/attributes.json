@@ -1,0 +1,118 @@
+{
+    "content": {
+        "sections": [
+            {
+                "section": null,
+                "columns": [
+                    {
+                        "column": null,
+                        "attributes": [
+                            {"id":"name", "attribute": "Имя", "type":"textbox", "description": "Имя вашего персонажа."},
+                            {"id":"player", "attribute": "Игрок", "type":"textbox", "description": "Ваше имя."},
+                            {"id":"chronicle", "attribute": "Хроника", "type":"textbox", "description": "Название хроники придумывает Рассказчик."}
+                        ]
+                    },
+                    {
+                        "column": null,
+                        "attributes": [
+                            {"id":"nature", "attribute": "Натура", "type":"textbox", "description": "Выбирается из списка архетипов. За успешное исполнение условия вы восстановите пункт Силы Воли."},
+                            {"id":"mask", "attribute": "Маска", "type":"textbox", "description": "Выбирается из списка архетипов. Покрывает вашу истинную натуру. Не восстанавливает Силу Воли."},
+                            {"id":"clan", "attribute": "Клан", "type":"textbox", "description": "Выбирается из списка кланов."}
+                        ]
+                    },
+                    {
+                        "column": null,
+                        "attributes": [
+                            {"id":"generation", "attribute": "Поколение", "type":"numupdown", "min":3, "max":15, "description": "Чем дальше от первого вампира Каина, тем меньше ваш потенциал."},
+                            {"id":"hideout", "attribute": "Убежище", "type":"textbox", "description": "Где вы переживаете день."},
+                            {"id":"concept", "attribute": "Концепт", "type":"textbox", "description": "Ёмкое описание вашего персонажа."}
+                        ]
+                    }
+                ]
+            },
+            {
+                "section": "Атрибуты",
+                "default-dot-power": 5,
+                "description": "Распределяется на основе выданных Рассказчиком очков. Одна точка в атрибуте выводит вас на стандартный человеческий уровень.",
+                "columns": [
+                    {
+                        "column": "Физические",
+                        "attributes": [
+                            {"attribute": "Сила", "type":"dotted", "description": ""},
+                            {"attribute": "Ловкость", "type":"dotted", "description": ""},
+                            {"attribute": "Выносливость", "type":"dotted", "description": ""}
+                        ]
+                    },
+                    {
+                        "column": "Социальные",
+                        "attributes": [
+                            {"attribute": "Обаяние", "type":"dotted", "description": ""},
+                            {"attribute": "Манипуляция", "type":"dotted", "description": ""},
+                            {"attribute": "Привлекательность", "type":"dotted", "description": ""}
+                        ]
+                    },
+                    {
+                        "column": "Ментальные",
+                        "attributes": [
+                            {"attribute": "Восприятие", "type":"dotted", "description": ""},
+                            {"attribute": "Интеллект", "type":"dotted", "description": ""},
+                            {"attribute": "Смекалка", "type":"dotted", "description": ""}
+                        ]
+                    }
+                ]
+            },
+            {
+                "section": "Способности",
+                "default-dot-power": 5,
+                "description": "Распределяется на основе выданных Рассказчиком очков. Одна точка в какой-либо способности выводит вас на стандартный человеческий уровень.",
+                "columns": [
+                    {
+                        "column": "Таланты",
+                        "attributes": [
+                            {"attribute": "Атлетика", "type":"dotted", "description": ""},
+                            {"attribute": "Внимательность", "type":"dotted", "description": ""},
+                            {"attribute": "Запугивание", "type":"dotted", "description": ""},
+                            {"attribute": "Знание улиц", "type":"dotted", "description": "Так называемые street smarts. Насколько сильна ваша связь с уличным миром."},
+                            {"attribute": "Лидерство", "type":"dotted", "description": ""},
+                            {"attribute": "Рукопашный бой", "type":"dotted", "description": ""},
+                            {"attribute": "Уклонение", "type":"dotted", "description": ""},
+                            {"attribute": "Хитрость", "type":"dotted", "description": ""},
+                            {"attribute": "Экспрессия", "type":"dotted", "description": ""},
+                            {"attribute": "Эмпатия", "type":"dotted", "description": ""}
+                        ]
+                    },
+                    {
+                        "column": "Навыки",
+                        "attributes": [
+                            {"attribute": "Безопасность", "type":"dotted", "description": ""},
+                            {"attribute": "Вождение", "type":"dotted", "description": ""},
+                            {"attribute": "выживание", "type":"dotted", "description": ""},
+                            {"attribute": "Исполнение", "type":"dotted", "description": ""},
+                            {"attribute": "Знание животных", "type":"dotted", "description": ""},
+                            {"attribute": "Ремесла", "type":"dotted", "description": ""},
+                            {"attribute": "Скрытность", "type":"dotted", "description": ""},
+                            {"attribute": "Стрельба", "type":"dotted", "description": ""},
+                            {"attribute": "Фехтование", "type":"dotted", "description": ""},
+                            {"attribute": "Этикет", "type":"dotted", "description": ""}
+                        ]
+                    },
+                    {
+                        "column": "Познания",
+                        "attributes": [
+                            {"attribute": "Академические", "type":"dotted", "description": ""},
+                            {"attribute": "Законы", "type":"dotted", "description": ""},
+                            {"attribute": "Компьютеры", "type":"dotted", "description": ""},
+                            {"attribute": "Лингвистика", "type":"dotted", "description": ""},
+                            {"attribute": "Медицинские", "type":"dotted", "description": ""},
+                            {"attribute": "Научные", "type":"dotted", "description": ""},
+                            {"attribute": "Оккультизм", "type":"dotted", "description": ""},
+                            {"attribute": "Политика", "type":"dotted", "description": ""},
+                            {"attribute": "Расследования", "type":"dotted", "description": ""},
+                            {"attribute": "Финансы", "type":"dotted", "description": ""}
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

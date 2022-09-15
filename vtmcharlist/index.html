@@ -68,7 +68,23 @@
         .logo-container>hr {
             flex:100;
         }
+        #settings {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 200px;
+            height: 250px;
+            background-color: lavender;
+        }
+        @media print {
+            #settings {
+                display: none;
+            }
+        }
     </style>
+    <div id="settings">
+
+    </div>
     <div class="container">
         <div class="logo-container">
             <hr>
