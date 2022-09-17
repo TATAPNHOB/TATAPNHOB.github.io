@@ -82,6 +82,9 @@
 			function animate() {
 
 				controls.update();
+
+				scene.rotation.x = time / 2000;
+
 				renderer.render( scene, camera );
 
 				requestAnimationFrame( animate );
