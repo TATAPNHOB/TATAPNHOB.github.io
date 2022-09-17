@@ -44,6 +44,7 @@
 				camera.position.z = 2;
 
 				scene = new THREE.Scene();
+				scene.add( new THREE.HemisphereLight() );
 
 				const directionalLight = new THREE.DirectionalLight( 0xffeedd );
 				directionalLight.position.set( 0, 0, 2 );
