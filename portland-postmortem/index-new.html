@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/droplet.ico" type="image/x-icon"/>
+    <title>PORTLAND POSTMORTEM</title>
+</head>
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+        body, .background {
+            width: 100%;
+            height: 100%;
+        }
+        body {
+            background-color: black;
+        }
+        .bg-image {
+            position: fixed;
+            z-index: 1;
+            background-image: url(./img/ppm.svg);
+            height: 90%;
+            width: 1000px;
+            background-repeat: no-repeat;
+            background-position: left;
+            background-size: contain;
+            transform: translate(-20px, 35px);
+        }
+        .content-wrapper {
+            position: absolute;
+            z-index: 2;
+            background-color: #993333;
+            width: 800px;
+            height: 4000px;
+            right: 75px;
+        }
+        .content {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        header {
+            position: fixed;
+            background-color:#993333;
+            padding-top: 20px;
+            width: 760px;
+            box-shadow: 0px 10px 5px #993333;
+        }
+        .pre-content {
+            width: 100%;
+            height: 100px;
+        }
+    </style>
+    <div class="background">
+        <div class="bg-image"></div>
+    </div>
+    <div class="content-wrapper">
+        <header>
+            <h2>Сессия 5.</h2>
+            <h1>КРЕПОСТЬ</h1>
+        </header>
+        <div class="content">
+            <div class="pre-content"></div>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+                Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo </p>
+        </div>
+        <div class="arrow" id="arrow-left"></div>
+        <div class="arrow" id="arrow-right"></div>
+    </div>
+</body>
+</html>
