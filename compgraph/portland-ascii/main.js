@@ -1,9 +1,8 @@
 
-import * as THREE from 'three';
-import { BoxGeometry } from 'three';
-import { TrackballControls } from 'three/addons/controls/TrackballControls.js';
-import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
-import { AsciiEffect } from 'three/addons/effects/AsciiEffect.js';
+import * as THREE from './node_modules/three/build/three.module.js';
+import { TrackballControls } from './node_modules/three/examples/jsm/controls/TrackballControls.js';
+import { GLTFLoader } from './node_modules/three/examples/jsm/loaders/GLTFLoader.js';
+import { AsciiEffect } from './node_modules/three/examples/jsm/effects/AsciiEffect.js';
 
 let controls, container;
 let camera, scene, renderer, effect;
